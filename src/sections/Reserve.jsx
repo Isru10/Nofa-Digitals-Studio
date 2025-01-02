@@ -1,4 +1,5 @@
 import React from 'react'
+import family from "../assets/family.jpg";
 
 const Reserve = () => {
   return (
@@ -6,7 +7,7 @@ const Reserve = () => {
     <div className="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto">
       <div className="flex-1">
         <img
-          src="./src/assets/family.jpg"
+          src={family}
           alt="Photography Studio"
           className="rounded-lg shadow-lg"
         />

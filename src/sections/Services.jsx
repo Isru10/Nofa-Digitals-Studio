@@ -2,6 +2,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+import Habeshawit from "../assets/Habeshawit.avif";
+import casual from "../assets/casual.jpg";
+import bride1 from "../assets/photo-1558794414-bdf63cfe06d7.avif";
+import singers from "../assets/photo-1662894312415-4ea3e988f63f.avif";
+import pregnant from "../assets/pregnant.jpg";
+
 const Services = () => {
 
     const settings = {
@@ -37,27 +44,27 @@ const Services = () => {
         {
           title: "Wedding Photoshoots",
           description: "Capture your special moments with elegance and creativity.",
-          image: "./src/assets/dress.jpg",
+          image: bride1,
         },
         {
           title: "Casual Photography",
           description: "Perfect shots for everyday moments and celebrations.",
-          image: "./src/assets/photo-1662894312415-4ea3e988f63f.avif",
+          image: casual,
         },
         {
           title: "Video Editing",
           description: "Professional editing to make your videos unforgettable.",
-          image: "./src/assets/casual.jpg",
+          image: Habeshawit,
         },
         {
           title: "Event Coverage",
           description: "Seamless coverage for events of all sizes.",
-          image: "./src/assets/photo-1558794401-54d7fce8d534.avif",
+          image: singers,
         },
         {
           title: "Portrait Photography",
           description: "Stunning portraits to cherish forever.",
-          image: "./src/assets/brides.jpg",
+          image: pregnant,
         },
       ];
     

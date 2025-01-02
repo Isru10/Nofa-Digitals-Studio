@@ -3,6 +3,13 @@
 // import project3 from "./src/assets/dress.jpg"
 // import project4 from "./src/assets/dress.jpg"
 
+import dress from "../assets/dress.jpg";
+// import Habeshawit from "../assets/Habeshawit.avif";
+import casual from "../assets/casual.jpg";
+import family from "../assets/family.jpg";
+import brides from "../assets/brides.jpg";
+
+
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
@@ -41,28 +48,28 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Dressing studio",
-    image: "./src/assets/dress.jpg",
+    image: dress,
     description:
       "A dress shoot environment particularly built for modeling.",
     technologies: ["5000Br", "Makeups", "modeling"],
   },
   {
     title: "Casual pictures outdoors",
-    image: "./src/assets/casual.jpg",
+    image:casual,
     description:
       "Casual shoot and photography outside studio for fun, casual and party events.",
     technologies: ["4000Br", "parties", "birthdays", "casuals", "hikes"],
   },
   {
     title: "Family photoshoot",
-    image: "./src/assets/family.jpg",
+    image: family,
     description:
       "A personal shoot for family and friends to cherish the memories together.",
     technologies: ["5000Br", "photos", "family", "get together"],
   },
   {
     title: "Wedding photoshoot",
-    image: "./src/assets/brides.jpg",
+    image: brides,
     description:
       "A Wedding shoot for couples to cherish the moments together.",
     technologies: ["10,000Br", "couples", "wedding", "parties", "family"],
