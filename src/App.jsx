@@ -44,7 +44,7 @@ function App() {
 
 
 
-  <div className="p-0 m-0 font-sans bg-[#252525]">
+  <div className="font-sans bg-[#252525] overflow-hidden">
       <Navbar />
       {/* <section className='pt-4'> */}
       <Hero />
