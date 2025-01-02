@@ -78,7 +78,8 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <h1 className="text-xl font-bold">NOFA Digitals</h1>
+        {/* <h1 className="">NOFA Digitals</h1> */}
+        <img src="src/assets/Screenshot (96).png" alt="Nofa digitals studio" className="rounded-full" width={45} height={45} />
         <div className="md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
             {isMenuOpen ? (

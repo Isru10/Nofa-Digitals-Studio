@@ -6,9 +6,6 @@ const Footer = () => {
       <p>&copy; 2024 NOFA Digitals. All rights reserved.</p>
       <p>Contact us: info@nofadigitals.com</p>
 
-<div className="p-2">
-
-</div>
   
 
     </footer>
