@@ -111,8 +111,8 @@ const HeroSection = () => {
     <div className="relative bg-black text-white h-screen overflow-hidden">
       {/* Header */}
      
-      {/* Hero Content */}
-      <div className=" flex flex-col-reverse lg:flex-row items-center h-full max-w-7xl mx-auto px-6 lg:px-12">
+      {/* Hero Content DONT FOGRET YOU CHANGED HERE */}
+      <div className=" flex flex-col-reverse lg:flex-row items-center lg:h-full max-w-7xl mx-auto px-6 lg:px-12">
         {/* Text Content */}
         <div className="hidden lg:block lg:w-1/2 text-center lg:text-left">
           <h2 className="text-5xl lg:text-6xl font-serif font-bold mb-6">
@@ -154,12 +154,22 @@ const HeroSection = () => {
           </div>
 
           {/* Mobile Screen Image */}
-          <div className=" pt-8 mt-12 block lg:hidden w-[80%] h-auto overflow-hidden rounded-tl-[100px] rounded-full relative" width="50%" height="50%"  >
+          <div className=" pt-8 mt-12 block lg:hidden w-[80%] h-auto overflow-hidden relative" width="50%" height="50%"  >
           <img
               src={Habeshawit}
               alt="Elegant Woman - Mobile"
-              className="w-full h-full object-cover"
+              className="mt-44 h-full w-full object-cover rounded-tl-[100px] rounded-full"
             />
+
+
+<div className="m-8">
+ 
+
+  <h2 className="text-4xl font-bold infotext">  Nofa Digitals Studio  </h2>
+  <span className="text-gray-400">Crafting Memories, Frame by Frame</span>
+
+</div>
+
 <div className="m-4 flex justify-center items-center">
 
 <a
