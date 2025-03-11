@@ -63,8 +63,6 @@
 
 
 
-
-// components/Navbar.js
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Screenshot from "../assets/Screenshot (96).png";
@@ -79,17 +77,26 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        {/* <h1 className="">NOFA Digitals</h1> */}
-        <img src={Screenshot} alt="Nofa digitals studio" className="rounded-full" width={45} height={45} />
+        <img
+          src={Screenshot}
+          alt="Nofa digitals studio"
+          className="rounded-full"
+          width={45}
+          height={45}
+        />
+
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
             {isMenuOpen ? (
-              <AiOutlineClose className="text-2xl" />
+              <AiOutlineClose className="text-2xl transition-transform transform rotate-180 duration-300 ease-in-out" />
             ) : (
-              <AiOutlineMenu className="text-2xl" />
+              <AiOutlineMenu className="text-2xl transition-transform transform rotate-0 duration-300 ease-in-out" />
             )}
           </button>
         </div>
+
+        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
           <li>
             <a href="#" className="hover:text-gray-400">
@@ -114,45 +121,57 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-black">
-          <ul className="space-y-4 py-4 px-6">
-            <li>
-              <a
-                href="#"
-                className="block text-lg text-white hover:text-gray-400"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="block text-lg text-white hover:text-gray-400"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="block text-lg text-white hover:text-gray-400"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="block text-lg text-white hover:text-gray-400"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
+      {/* Mobile Menu with Smooth Animation */}
+      <div
+        className={`fixed top-0 right-0 w-3/4 h-full bg-black transform transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } md:hidden shadow-lg`}
+      >
+        <button
+          onClick={toggleMenu}
+          className="absolute top-5 right-5 text-white text-2xl"
+        >
+          <AiOutlineClose />
+        </button>
+        <ul className="space-y-6 pt-20 px-6">
+          <li>
+            <a
+              href="#"
+              className="block text-lg text-white hover:text-gray-400"
+              onClick={toggleMenu}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              className="block text-lg text-white hover:text-gray-400"
+              onClick={toggleMenu}
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              className="block text-lg text-white hover:text-gray-400"
+              onClick={toggleMenu}
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="block text-lg text-white hover:text-gray-400"
+              onClick={toggleMenu}
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

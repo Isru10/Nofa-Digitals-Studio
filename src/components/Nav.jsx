@@ -1,41 +1,80 @@
 import React from 'react'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import Screenshot from "../assets/Screenshot (96).png";
+import { nav } from 'framer-motion/client';
+
 
 const Nav = () => {
   return (
-    <div className='w-screen py-6 px-5 lg:px-14 bg-gray-700 justify-between flex text-neutral-50'> 
-    <span className='text-3xl font-bold'> Nofa Digitals</span>
-    <ul className='md:flex hidden items-center space-x-5'>
-      <li className='flex justify-center w-full py-4 hover:bg[#202020]'>About</li>
-      <li className='flex justify-center w-full py-4 hover:bg[#202020]'>Services</li>
-      <li className='flex justify-center w-full py-4 hover:bg[#202020]'>Reserve</li>
-      <li className='flex justify-center w-full py-4 hover:bg[#202020]'>Contact</li>
-    </ul>
+    // <div className='w-screen py-6 px-5 lg:px-14 bg-gray-700 justify-between flex text-neutral-50'> 
+    // <span className='text-3xl font-bold'> Nofa Digitals</span>
+    // <ul className='md:flex hidden items-center space-x-5'>
+    //   <li className='flex justify-center w-full py-4 hover:bg[#202020]'>About</li>
+    //   <li className='flex justify-center w-full py-4 hover:bg[#202020]'>Services</li>
+    //   <li className='flex justify-center w-full py-4 hover:bg[#202020]'>Reserve</li>
+    //   <li className='flex justify-center w-full py-4 hover:bg[#202020]'>Contact</li>
+    // </ul>
 
 
-    {/* hamburger */} 
+    // {/* hamburger */} 
 
-    <button className='space-y-1 group md:hidden'>
-      <div className="w-6 h-1 bg-white"></div>
-      <div className="w-6 h-1 bg-white"></div>
-      <div className="w-6 h-1 bg-white"></div>
+    // <button className='space-y-1 group md:hidden'>
+    //   <div className="w-6 h-1 bg-white"></div>
+    //   <div className="w-6 h-1 bg-white"></div>
+    //   <div className="w-6 h-1 bg-white"></div>
 
-      {/* menu */}
+    //   {/* menu */}
 
-      <ul className='bg-[#252525] w-screen pb-10 absolute -top-full group-focus:top-0 right-0 duration-150 flex flex-col space-y-3 justify-end'>
-        <button className='px-10 py-8 relative ml-auto'>
-          <div className="w-6 h-1 bg-white absolute rotate-45"></div>
-          <div className="w-6 h-1 bg-white absolute -rotate-45"></div>
+    //   <ul className='bg-[#252525] w-screen pb-10 absolute -top-full group-focus:top-0 right-0 duration-150 flex flex-col space-y-3 justify-end'>
+    //     <button className='px-10 py-8 relative ml-auto'>
+    //       <div className="w-6 h-1 bg-white absolute rotate-45"></div>
+    //       <div className="w-6 h-1 bg-white absolute -rotate-45"></div>
 
-        </button>
-      <li>About</li>
-      <li>Services</li>
-      <li>Reserve</li>
-      <li>Contact</li>
-    </ul>
+    //     </button>
+    //   <li>About</li>
+    //   <li>Services</li>
+    //   <li>Reserve</li>
+    //   <li>Contact</li>
+    // </ul>
 
-    </button>
+    // </button>
 
+    // </div>
+<nav>
+  <div className="flex justify-between text-white bg-black">
+    <img src={Screenshot} alt="" />
+    <div className="md:hidden">
+      <button> 
+        isMenuOpen?(
+          <AiOutlineMenu/>
+        ):(
+          <AiOutlineClose/>)
+      </button>
     </div>
+
+
+
+<ul className='md:flex hidden'>
+  <li>
+    <a href="">home</a>
+  </li>
+  <li>
+    <a href="">home</a>
+  </li>
+  <li>
+    <a href="">home</a>
+  </li>
+  <li>
+    <a href="">home</a>
+  </li>
+
+</ul>
+    
+  </div>
+
+
+  <div className=""></div>
+</nav>
   )
 }
 
